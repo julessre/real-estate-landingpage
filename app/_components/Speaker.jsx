@@ -61,6 +61,9 @@ export default function Speaker() {
           />
         </div>
       </div>
+      <div>
+        <button className={styles.ticketButton}>Register here!</button>
+      </div>
     </div>
   );
 }
