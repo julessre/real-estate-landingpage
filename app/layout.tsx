@@ -1,11 +1,10 @@
+import './global.scss';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata = {
-  title: {
-    default: 'Home page | Real Estate company',
-    template: '%s | Real Estate',
-  },
+  title: 'Home page | Real Estate company',
+  description: 'Event landing page',
 };
 
 export default function RootLayout({ children }) {
@@ -15,19 +14,11 @@ export default function RootLayout({ children }) {
         <header>
           <div>
             <nav>
-              <Link href="/" className="navText">
-                Overview
-              </Link>
-
-              <Link href="/agenda" className="navText">
-                Agenda
-              </Link>
-
-              <Link href="/contact" className="navText">
-                Contact
-              </Link>
-              <Link href="/registration" className="navText">
-                Registration
+              <Link href="/">Overview</Link>
+              <Link href="/agenda">Agenda</Link>
+              <Link href="/contact">Contact</Link>
+              <Link href="/tickets" className="navButton">
+                Tickets
               </Link>
             </nav>
           </div>

@@ -1,15 +1,11 @@
-// Supports weights 200-900
-@import '@fontsource-variable/nunito';
-
 :root {
   --max-width: 1100px;
-  --font-headline: 'cyrene';
-  --font-family-text: 'Nunito Variable', sans-serif;
-  --color-background: #f4e8dd;
-  --color-button: #003da5;
-  --primary-color: #dc1c2e;
-  --secondary-color: #003da5;
-  --font-family-headline: cyrene;
+  --font-family: 'Roboto', sans-serif;
+  --color-background: #04383a;
+  --color-button: #f2f1c5;
+  --primary-color: #04383a;
+  --secondary-color: #9cada1;
+  --highlight-color: #f2f1c5;
   --text-size: 20px;
   --h2-size: 24px;
 }
@@ -18,7 +14,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background: #f4e8dd;
 }
 
 html,
@@ -29,8 +24,8 @@ body {
 
 h1,
 h2 {
-  font-family: cyrene, sans-serif;
-  color: var(--secondary-color);
+  font-family: var(--font-family);
+  color: white;
 }
 
 header {
@@ -38,77 +33,67 @@ header {
 }
 
 nav {
-  font-family: var(--font-family-text);
-  color: var(--primary-color);
-  justify-content: space-between;
-  border-bottom: 1px solid var(--primary-color);
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: white;
+  background-color: var(--primary-color);
+  justify-content: space-evenly;
   padding: 10px;
-  gap: 1rem;
   display: flex;
   align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
 
-  .navText {
-    align-items: center;
-    display: flex;
-  }
+  .navButton {
+    background-color: var(--color-button);
+    color: var(--primary-color);
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: 2px solid var(--primary-color);
+    font-family: var(--font-family);
 
-  .logo {
-    width: 2rem;
-    opacity: 1;
-    margin-right: 1rem;
-  }
-  .icon {
-    opacity: 1;
-    margin-left: 10rem;
-    display: flex;
-    align-items: center;
-  }
-  .icon a {
-    width: 2rem;
-    margin-left: 1rem;
-  }
-
-  @media screen and (max-width: 500px) {
-    .nav {
-      display: block;
-      position: relative;
-      left: 0;
-      width: 100%;
-      text-align: center;
+    &:hover {
+      background-color: white;
+      border: 2px solid var(--primary-color);
+      cursor: pointer;
+      color: var(--primary-color);
     }
+  }
+}
 
-    .icon {
-      display: inline-block;
-      margin-left: 1rem;
-      align-items: center;
-      justify-content: center;
-      margin-top: -10px;
-    }
-
-    .logo {
-      font-size: 1rem;
-    }
+@media screen and (max-width: 500px) {
+  .nav {
+    display: block;
+    position: relative;
+    left: 0;
+    width: 100%;
+    text-align: center;
   }
 }
 
 a {
   color: inherit;
   text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
 }
 
 button {
   background-color: var(--color-button);
-  color: white;
+  color: var(--primary-color);
   border-radius: 15px;
   padding: 10px 15px;
-  border: 2px solid var(--color-button);
-  font-family: var(--font-family-text);
+  border: 2px solid var(--primary-color);
+  font-family: var(--font-family);
 
   &:hover {
     background-color: white;
-    border: 2px solid var(--color-button);
+    border: 2px solid var(--primary-color);
     cursor: pointer;
-    color: var(--color-button);
+    color: var(--primary-color);
   }
 }
 

@@ -1,0 +1,41 @@
+.headerImage {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionBackground {
+  background-color: var(--secondary-color);
+  width: 100%;
+}
+
+.sectionContainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  text-align: left;
+  max-width: 1000px;
+  font-size: var(--text-size);
+  font-family: var(--font-family);
+  line-height: 33px;
+  color: white;
+
+  @media screen and (max-width: 600px) {
+    width: 100vw;
+  }
+}
+
+.sectionHeader {
+  padding-bottom: 40px;
+}
+
+button {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-size: var(--text-size);
+  justify-content: center;
+
+}
