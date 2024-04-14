@@ -1,13 +1,17 @@
-import './header.scss';
 import React from 'react';
+import styles from './header.module.scss';
 
 export default function Header() {
   return (
     <div>
-      <img src="/header.png" alt="event header" className="headerImage" />
-      <div className="sectionBackground">
-        <div className="sectionContainer">
-          <div className="sectionHeader">
+      <img
+        src="/header.png"
+        alt="event header"
+        className={styles.headerImage}
+      />
+      <div className={styles.sectionBackground}>
+        <div className={styles.sectionContainer}>
+          <div className={styles.sectionHeader}>
             <h2>
               The European Real Estate Conference 2024 is where industry
               leaders, experts, and innovators converge to explore the latest
@@ -28,7 +32,9 @@ export default function Header() {
             Register now to secure your place at the forefront of innovation and
             sustainability in European real estate.
             <div>
-              <button>Get your Tickets now!</button>
+              <button className={styles.ticketButton}>
+                Get your Tickets now!
+              </button>
             </div>
           </div>
         </div>

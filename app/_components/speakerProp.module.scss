@@ -1,0 +1,39 @@
+.propGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  grid-gap: 2rem;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.propCard {
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.propImage {
+  width: 10rem;
+}
+
+.propTitle {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+  font-weight: 600;
+}
+
+.propCompany {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+  font-weight: 300;
+}

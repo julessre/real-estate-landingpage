@@ -38,7 +38,8 @@ nav {
   color: white;
   background-color: var(--primary-color);
   justify-content: space-evenly;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   align-items: center;
   padding-left: 200px;
@@ -60,14 +61,17 @@ nav {
     }
   }
 }
-
-@media screen and (max-width: 500px) {
-  .nav {
-    display: block;
-    position: relative;
-    left: 0;
+@media screen and (max-width: 800px) {
+  nav {
+    display: flex;
+    // position: relative;
     width: 100%;
     text-align: center;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    justify-content: space-evenly;
   }
 }
 

@@ -1,4 +1,5 @@
 import Header from './_components/Header';
+import Speaker from './_components/Speaker';
 import Sponsors from './_components/Sponsors';
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <Header />
       <Sponsors />
+      <Speaker />
     </div>
   );
 }

@@ -36,3 +36,17 @@
   align-items: center;
   width: 100%;
 }
+
+@media screen and (max-width: 800px) {
+  .logoBanner {
+    display: block;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
