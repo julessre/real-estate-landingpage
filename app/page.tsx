@@ -1,6 +1,11 @@
 import Header from './_components/Header';
-import styles from './page.module.css';
+import Sponsors from './_components/Sponsors';
 
 export default function Home() {
-  return <Header />;
+  return (
+    <div>
+      <Header />
+      <Sponsors />
+    </div>
+  );
 }
