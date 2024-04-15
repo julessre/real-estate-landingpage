@@ -18,5 +18,5 @@ This landingpage offers all necessary information for users regarding a fictiona
 ## Screenshot 📷
 
 <p align="left">
-  <img src="./public/landingpage.png" width="800" alt="homepage">
+  <img src="./public/landingpage.png" width="500" alt="homepage">
 </p>
