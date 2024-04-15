@@ -1,6 +1,5 @@
 .sectionBackground {
   background-color: var(--secondary-color);
-  height: 100vw;
 }
 
 .sectionContainer {
@@ -94,13 +93,11 @@
 
 .form {
   width: 900px;
-  margin-right: 80px;
   text-align: left;
 
-  @media (max-width: 600px) {
-    width: 50%;
-    align-items: flex-start;
-    flex-direction: column;
+  @media (max-width: 1000px) {
+    width: auto;
+    align-items: center;
   }
 }
 
@@ -122,6 +119,10 @@
 
   div {
     width: 47%;
+  }
+  @media (max-width: 600px) {
+    width: auto;
+    align-items: center;
   }
 }
 
