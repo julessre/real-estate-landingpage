@@ -1,7 +1,10 @@
+'use client';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import styles from './header.module.scss';
 
 export default function Header() {
+  const router = useRouter();
   return (
     <div>
       <img
@@ -32,7 +35,12 @@ export default function Header() {
             Register now to secure your place at the forefront of innovation and
             sustainability in European real estate.
             <div>
-              <button className={styles.ticketButton}>
+              <button
+                onClick={() => {
+                  router.push('/tickets');
+                }}
+                className={styles.ticketButton}
+              >
                 Get your Tickets now!
               </button>
             </div>

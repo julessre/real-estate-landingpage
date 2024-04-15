@@ -1,10 +1,12 @@
+'use client';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import styles from './speaker.module.scss';
-import speakerProp from './speakerProp';
 import SpeakerProp from './speakerProp';
 import stylesProp from './speakerProp.module.scss';
 
 export default function Speaker() {
+  const router = useRouter();
   return (
     <div className={styles.sectionBackground}>
       <div className={styles.sectionContainer}>
@@ -62,7 +64,14 @@ export default function Speaker() {
         </div>
       </div>
       <div>
-        <button className={styles.ticketButton}>Register here!</button>
+        <button
+          onClick={() => {
+            router.push('/tickets');
+          }}
+          className={styles.ticketButton}
+        >
+          Register here!
+        </button>
       </div>
     </div>
   );

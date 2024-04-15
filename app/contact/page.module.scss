@@ -1,0 +1,22 @@
+.sectionBackground {
+  background-color: var(--secondary-color);
+  width: 100vw;
+  height: 100vh;
+}
+
+.sectionContainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  text-align: left;
+  max-width: 1000px;
+  font-size: var(--text-size);
+  font-family: var(--font-family);
+  line-height: 33px;
+  color: var(--primary-color);
+
+  @media screen and (max-width: 600px) {
+    width: 100vw;
+    padding: 20px;
+  }
+}
