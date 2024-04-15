@@ -1,6 +1,11 @@
 import React from 'react';
 import style from './page.module.scss';
 
+export const metadata = {
+  title: 'Contact',
+  description: 'Contact information page',
+};
+
 export default function Agenda() {
   return (
     <div className={style.sectionBackground}>

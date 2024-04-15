@@ -1,6 +1,11 @@
 import React from 'react';
 import style from './page.module.scss';
 
+export const metadata = {
+  title: 'Agenda',
+  description: 'Find the full conference agenda here',
+};
+
 const agenda = [
   {
     id: 1,
