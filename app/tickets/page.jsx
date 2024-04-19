@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import styles from './page.module.scss';
@@ -6,7 +7,7 @@ import styles from './page.module.scss';
 const tickets = [
   {
     id: 1,
-    name: 'Full Conference Ticket',
+    name: 'Full Conference',
     days: '1-3 Oct',
     costs: '300 €',
   },
